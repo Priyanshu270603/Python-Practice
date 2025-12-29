@@ -7,14 +7,9 @@ def find_max(L1):
 
     return max
 
-n = int(input("Enter the elements of the list: "))
+n = list(map(int, input("Enter the elements of the list: ").split()))
 
-L1 = []
 
-for i in range(n):
 
-    value = int(input(f"Enter elements {i + 1}: "))
+print("Max value is:", find_max(n))
 
-    L1.append(value)
-
-print("Max value is:", find_max(L1))
