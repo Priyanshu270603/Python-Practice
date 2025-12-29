@@ -1,21 +1,14 @@
-def filter_even(L1):
+def filter_even(lst):
     even = []
 
-    for num in L1:
-        if num % 2 ==0:
+    for num in lst:
+        if num % 2 == 0:
             even.append(num)
 
     return even
 
+n = list(map(int, input("Enter the elements: ").split()))
 
-n = int(input("Enter the number of elements in the list: "))
+print("The entered list is: ", n)
 
-L1 = []
-
-for i in range(n):
-
-    value = int(input(f"Enter elements {i + 1}: "))
-
-    L1.append(value)
-
-print("Even elements in the list are: ", filter_even(L1))
+print("The even elements in the list are: ", filter_even(n))
