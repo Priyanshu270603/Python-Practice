@@ -1,4 +1,4 @@
-def area(length, width):
+def calculate_area(length, width):
     return length * width
 
 
@@ -7,9 +7,8 @@ length = float(input("Enter length: "))
 width = float(input("Enter width: "))
 
 
-ar = area(length, width)
+ar = calculate_area(length, width)
 
-print(ar, "cm^2")
-
+print("Area of triangle is: ", ar , "cm^2")
 
 
